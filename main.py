@@ -310,12 +310,13 @@ class SensorServer:
             if packet.method == COAP_METHOD.COAP_GET:
                 resources = {
                     "resources": [
-                        {"path": "/sensors", "rt": "sensors"},
-                        {"path": "/capabilities", "rt": "capabilities"},
-                        {"path": "/config", "rt": "config"},
-                        {"path": "/leds", "rt": "leds"}
+                        {"href": "/sensors",      "rt": "oic.r.sensor",       "if": "oic.if.baseline"},
+                        {"href": "/capabilities", "rt": "oic.r.coreconf",     "if": "oic.if.baseline"},
+                        {"href": "/config",       "rt": "oic.r.configuration","if": "oic.if.baseline"},
+                        {"href": "/leds",         "rt": "oic.r.led",         "if": "oic.if.a"}
                     ]
                 }
+
                 try:
                     response = cbor.dumps(resources)
                 except Exception as e:
