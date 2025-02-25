@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "serial:/COM4",
+			"uri": "serial://com4/"
+		}
+	],
+	"settings": {
+		"python.languageServer": "Pylance",
+		"circuitpython.board.version": null,
+		"python.analysis.diagnosticSeverityOverrides": {
+			"reportMissingModuleSource": "none"
+		},
+		"python.analysis.extraPaths": [
+			"",
+			"c:\\Users\\Irfan\\.vscode\\extensions\\joedevivo.vscode-circuitpython-0.1.20-win32-x64\\stubs",
+			"c:\\Users\\Irfan\\AppData\\Roaming\\Code\\User\\globalStorage\\joedevivo.vscode-circuitpython\\bundle\\20250225\\adafruit-circuitpython-bundle-py-20250225\\lib"
+		]
+	}
+}

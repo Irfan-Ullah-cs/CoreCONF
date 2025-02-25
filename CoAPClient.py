@@ -29,8 +29,8 @@ async def get_resource(ip, resource):
 async def main():
     ip = "192.168.4.226"
     await get_resource(ip, ".well-known/core")
-    # await get_resource(ip, "capabilities")
-    # await get_resource(ip, "sensors")
+    await get_resource(ip, "capabilities")
+    await get_resource(ip, "sensors")
     await get_resource(ip, "config")
 
 if __name__ == "__main__":

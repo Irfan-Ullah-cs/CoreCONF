@@ -40,13 +40,13 @@ async def main():
     
     # Define the sampling interval payload as a Python dictionary
     SamplingPayload = {
-        "sampling_interval": 21  # Update the sampling interval to 10 seconds
+        "sampling_interval": 5  # Update the sampling interval to 10 seconds
     }
     
     # Define the LED status payload as a Python dictionary
     LEDPayload = {
         "redLed": False,
-        "yellowLed": False,
+        "yellowLed": True,
         "greenLed": False
     }
     
